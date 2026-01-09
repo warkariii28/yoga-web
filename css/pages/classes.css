@@ -1,0 +1,41 @@
+/* ================================
+   Classes Page Styles
+   ================================ */
+
+.classes-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.classes-intro p {
+  margin: 0 auto;
+}
+
+/* Class list layout */
+.class-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Individual class card */
+.class-card {
+  border: 1px solid #e5e5e5;
+  padding: 1.5rem;
+}
+
+.class-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.class-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .class-list {
+    grid-template-columns: 1fr;
+  }
+}

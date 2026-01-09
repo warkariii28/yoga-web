@@ -1,0 +1,57 @@
+/* ================================
+   Contact Page Styles
+   ================================ */
+
+.contact-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-intro p {
+  margin: 0 auto;
+}
+
+/* Form layout */
+.contact-form-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Inputs */
+input,
+textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+/* Submit button */
+button {
+  align-self: flex-start;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  border: 1px solid #000;
+}
