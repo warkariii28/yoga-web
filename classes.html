@@ -12,6 +12,11 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/pages/classes.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,44 +25,59 @@
     <nav class="nav">
       <a href="index.html" class="logo">Yoga Studio</a>
       <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="classes.html">Classes</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+
     </nav>
   </header>
 
   <main>
-    <section class="classes-intro">
+
+    <section class="classes-hero">
       <h1>Our Classes</h1>
-      <p>
-        Each class follows a structured approach rooted in traditional yoga practice.
-        Choose consistency over shortcuts.
+
+      <p class="classes-intro">
+        Our yoga classes are rooted in traditional practice and designed to
+        support physical strength, mental clarity, and inner balance.
       </p>
     </section>
 
-    <section class="class-list">
-      <article class="class-card">
+    <section class="classes-list">
+
+      <article class="class-item">
+        <img src="./assets/images/hatha-yoga.png" alt="Hatha Yoga practice" class="class-image">
         <h2>Hatha Yoga</h2>
         <p>
-          A foundational practice focusing on posture, breath, and stability.
+          A foundational practice focused on posture alignment,
+          breath awareness, and building physical stability.
         </p>
       </article>
 
-      <article class="class-card">
-        <h2>Vinyasa Flow</h2>
+      <article class="class-item">
+        <img src="./assets/images/meditation.png" alt="Mindfulness meditation" class="class-image">
+        <h2>Mindfulness Meditation</h2>
         <p>
-          Dynamic sequences linking breath with movement for strength and focus.
+          Guided meditation practices to calm the mind,
+          improve focus, and cultivate inner awareness.
         </p>
       </article>
 
-      <article class="class-card">
-        <h2>Meditation & Pranayama</h2>
+      <article class="class-item">
+        <img src="./assets/images/therpeutic-yoga.png" alt="Therapeutic yoga practice" class="class-image">
+        <h2>Therapeutic Yoga</h2>
         <p>
-          Breath control and stillness to build clarity and discipline of mind.
+          A gentle approach using yoga techniques to address
+          pain, stress, and physical imbalances.
         </p>
       </article>
+
     </section>
+
   </main>
 
 

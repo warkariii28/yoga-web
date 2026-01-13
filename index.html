@@ -1,55 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Yoga Studio</title>
-  <meta name="description" content="Traditional yoga practice for strength, balance, and inner calm.">
+    <title>Yoga Studio</title>
+    <meta name="description" content="Traditional yoga practice for strength, balance, and inner calm.">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/home.css">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="logo">Yoga Studio</a>
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="classes.html">Classes</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Yoga Studio</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
 
-  <!-- Main Content -->
-  <main>
-    <section class="hero">
-      <h1>Practice Yoga. Live Balanced.</h1>
-      <p>Rooted in tradition. Designed for modern life.</p>
-    </section>
+        </nav>
+    </header>
 
-    <section class="intro">
-      <h2>Why Yoga?</h2>
-      <p>
-        Yoga builds strength, clarity, and discipline — not trends.
-      </p>
-    </section>
-  </main>
+    <!-- Main Content -->
+    <main>
+        <section class="hero hero-image">
+            <div class="hero-content">
+                <h1>
+                    Find your balance - body & mind
+                </h1>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <p>&copy; 2026 Yoga Studio. All rights reserved.</p>
-  </footer>
+                <p>
+                    Transform your mind, body and soul with the power of Yoga
+                </p>
 
-  <!-- JS -->
-  <script src="js/main.js"></script>
-  <script src="js/pages/home.js"></script>
+                <a href="classes.html" class="hero-cta">Get Started</a>
+
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="about-preview-content">
+                <h2>About Us</h2>
+                <p>
+                    We are dedicated to promoting holistic wellness through yoga,
+                    meditation and mindfulness practices.
+                    Our mission is to help individuals achieve balance,
+                    strength and peace in their daily lives.
+                </p>
+
+                <a href="about.html" class="text-link">Learn more →</a>
+            </div>
+
+            <figure class="about-image">
+                <img src="./assets/images/yoga-hero.png" alt="Yoga practice for balance and calm">
+            </figure>
+        </section>
+
+
+        <section class="classes-preview">
+            <h2>Our Classes</h2>
+
+            <div class="preview-grid">
+                <article class="preview-card">
+                    <img src="./assets/images/hatha-yoga.png" alt="Hatha Yoga icon" class="class-icon">
+                    <h3>Hatha Yoga</h3>
+                    <p>A gentle introduction to the most basic yoga postures</p>
+
+                </article>
+
+                <article class="preview-card">
+                    <img src="./assets/images/om.png" alt="Meditation icon" class="class-icon">
+                    <h3>Mindfulness Meditation</h3>
+                    <p>A dynamic flow connecting movement with breath</p>
+
+                </article>
+
+                <article class="preview-card">
+                    <img src="./assets/images/therpeutic-yoga.png" alt="Therapeutic Yoga icon" class="class-icon">
+                    <h3>Therapeutic Yoga</h3>
+                    <p>Yoga techniques designed to heal and restore the body</p>
+
+                </article>
+            </div>
+
+            <a href="classes.html" class="section-link">View All Classes →</a>
+
+        </section>
+
+        <section class="instructors-preview">
+            <h2>Our Instructors</h2>
+
+            <div class="preview-grid">
+                <article class="preview-card">
+                    <img src="./assets/images/yoga-class.jpg" alt="Yoga instructor guiding students"
+                        class="instructor-image">
+                    <h3>Experienced Teachers</h3>
+                    <p>Guided by discipline, experience, and tradition.</p>
+                </article>
+
+                <article class="preview-card">
+                    <img src="./assets/images/yoga-class.jpg" alt="Yoga instructor guiding students" class="instructor-image">
+                    <h3>Personal Guidance</h3>
+                    <p>Focused attention to support your practice.</p>
+                </article>
+            </div>
+
+            <a href="instructors.html" class="section-link">Meet our instructors →</a>
+        </section>
+
+        <section class="schedule-preview">
+            <h2>Weekly Schedule</h2>
+
+            <p class="schedule-intro">
+                Our yoga classes are designed to fit into your daily routine
+                with flexible timings
+            </p>
+
+            <div class="schedule-preview-grid">
+                <div class="schedule-day">
+                    <h3>Morning</h3>
+                    <p>6:00 AM – 8:00 AM</p>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>Evening</h3>
+                    <p>6:00 PM – 8:00 PM</p>
+                </div>
+            </div>
+            <figure class="schedule-image">
+                <img src="./assets/images/yoga-class-schedule.png" alt="Yoga class schedule">
+            </figure>
+
+            <a href="schedule.html" class="section-link">View full schedule →</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Yoga Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/pages/home.js"></script>
 </body>
+
 </html>

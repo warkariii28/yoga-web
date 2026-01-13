@@ -1,0 +1,118 @@
+/* ================================
+   Schedule Hero
+   ================================ */
+
+.schedule-hero {
+  padding: 4.5rem 1.25rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.schedule-hero > * {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule-intro {
+  max-width: 65ch;
+  margin: 1.5rem auto 0;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ================================
+   Schedule Table Layout
+   ================================ */
+
+.schedule-table {
+  padding: 4.5rem 1.25rem;
+}
+
+.schedule-table table {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.schedule-table th {
+  font-weight: 600;
+  border-bottom: 2px solid #e5e5e5;
+  letter-spacing: 0.02em;
+  color: #333;
+}
+
+.schedule-table td {
+  border-bottom: 1px solid #eee;
+  color: #444;
+}
+
+.schedule-table td:not(:first-child) {
+  color: #555;
+}
+
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+
+  .schedule-table table,
+  .schedule-table thead,
+  .schedule-table tbody,
+  .schedule-table th,
+  .schedule-table td,
+  .schedule-table tr {
+    display: block;
+  }
+
+  .schedule-table thead {
+    display: none;
+  }
+
+  .schedule-table tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #fff;
+  }
+
+  .schedule-table tbody tr:hover {
+    background-color: #f3f3f3;
+  }
+
+  
+  .schedule-table td {
+    border: none;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .schedule-table td::before {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #333;
+  }
+
+  .schedule-table td:nth-child(1)::before {
+    content: "Day";
+  }
+
+  .schedule-table td:nth-child(2)::before {
+    content: "Morning";
+  }
+
+  .schedule-table td:nth-child(3)::before {
+    content: "Evening";
+  }
+}

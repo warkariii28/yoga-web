@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>About | Yoga Studio</title>
   <meta name="description" content="Learn about our yoga philosophy and teaching tradition.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -19,21 +24,66 @@
     <nav class="nav">
       <a href="index.html" class="logo">Yoga Studio</a>
       <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="classes.html">Classes</a></li>
+        <li><a href="instructors.html">Instructors</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+
     </nav>
   </header>
 
   <main>
-    <section>
+    <section class="about-hero">
       <h1>About Us</h1>
-      <p>
-        Our teaching is rooted in traditional yoga principles,
-        focusing on discipline, balance, and lifelong practice.
+
+      <p class="about-intro">
+        We are dedicated to promoting holistic wellness through yoga,
+        meditation and mindfulness practices.
+        Our mission is to help individuals achieve balance,
+        strength and peace in their daily lives.
       </p>
+
+      <figure class="about-hero-image">
+        <img src="./assets/images/yoga-hero.png" alt="Yoga practice and mindfulness">
+      </figure>
     </section>
+
+    <section class="about-vision">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Our Vision</h2>
+          <p>
+            To create a healthier and happier world through the practice of yoga.
+          </p>
+        </div>
+
+        <figure class="about-image">
+          <img src="./assets/images/vision.png" alt="Vision of holistic wellness">
+        </figure>
+      </div>
+    </section>
+
+
+
+    <section class="about-mission">
+      <div class="about-content">
+        <figure class="about-image">
+          <img src="./assets/images/mission.png" alt="Mission of yoga and well-being">
+        </figure>
+
+        <div class="about-text">
+          <h2>Our Mission</h2>
+          <p>
+            To spread awareness of yoga and its benefits for physical,
+            mental and spiritual well-being.
+          </p>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -42,4 +92,5 @@
 
   <script src="js/main.js"></script>
 </body>
+
 </html>

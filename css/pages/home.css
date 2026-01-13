@@ -1,22 +1,146 @@
+/* global section breathing room */
+.about-preview,
+.classes-preview,
+.instructors-preview,
+.schedule-preview {
+  padding: 4.5rem 1.25rem;
+}
+
+.about-preview {
+  background-color: #fafafa;
+}
+
+.classes-preview {
+  background-color: #ffffff;
+}
+
+.instructors-preview {
+  background-color: #fafafa;
+}
+
+.schedule-preview {
+  background-color: #ffffff;
+}
+
+.about-preview-content p,
+.preview-card p,
+.schedule-intro {
+  line-height: 1.7;
+  color: #444;
+}
+
 /* ================================
    Home Page Styles
    ================================ */
 
-/* Hero section */
 .hero {
-  padding: 4rem 0;
+  padding: 5rem 1rem;
+  background-color: #f7f7f7;
+  position: relative;
+  width: 100%;
+  max-width: none;
+  /* margin:0; */
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-image {
+  background-image: url("/assets/images/yoga-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
   text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* <-- CENTER EVERYTHING */
 }
 
 .hero h1 {
-  font-size: 2.75rem;
+  font-size: 2.8rem;
   margin-bottom: 1rem;
+  color: #fff;
+  letter-spacing: -0.02em;
 }
 
 .hero p {
   font-size: 1.1rem;
-  color: #555;
+  color: #fff;
+  margin: 0 auto 1.5rem;
+}
+
+/* CTA button */
+.hero-cta {
+  background-color: #ff914d;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 0.75rem 1.75rem;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.hero-cta:hover{
+  filter:brightness(0.95);
+}
+
+
+
+/* ================================
+   Home – About Preview
+   ================================ */
+
+.about-preview {
+  /* padding: 2rem 1rem; */
+  background-color: #f7f7f7;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.about-preview-content {
+  max-width: 700px;
   margin: 0 auto;
+  text-align: center;
+  border: 1px solid grey;
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  display: block;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
 }
 
 /* Intro section */
@@ -64,6 +188,140 @@
   width: 100%;
 }
 
+/* ================================
+   Home – Classes & Instructors Preview
+   ================================ */
+
+.classes-preview,
+.instructors-preview {
+  /* padding: 4rem 1rem; */
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.instructors-preview .preview-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.preview-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid grey;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.preview-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.preview-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.preview-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.class-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.instructor-image {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 18px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.section-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  border-radius: 999px;
+}
+
+.section-link:hover{
+  filter:brightness(0.95);
+}
+
+/* ================================
+   Home – Schedule Preview
+   ================================ */
+
+.schedule-preview {
+  /* padding: 4rem 1rem; */
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.schedule-intro {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.schedule-preview-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.schedule-image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.schedule-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  display: block;
+}
+
+
+.schedule-day {
+  border: 1px solid #e5e5e5;
+  padding: 1.25rem 2rem;
+  background-color: #fff;
+}
+
+.schedule-day h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.schedule-day p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
 
 @media (max-width: 768px) {
 
@@ -77,5 +335,14 @@
 
   .hero p {
     font-size: 1rem;
+  }
+
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-preview-grid {
+    flex-direction: column;
+    align-items: center;
   }
 }

@@ -1,0 +1,120 @@
+/* ================================
+   Instructors Hero
+   ================================ */
+
+.instructors-hero {
+  padding: 4.5rem 1.25rem;
+  text-align: center;
+}
+
+
+.instructors-hero .instructors-intro {
+  max-width: 65ch;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #444;
+}
+/* Match Home / Classes content rail */
+.instructors-hero > * {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instructors-hero h1 {
+  margin-bottom: 1rem;
+}
+
+.instructors-intro {
+  max-width: 65ch;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #444;
+}
+
+
+/* ================================
+   Instructors Page Styles
+   ================================ */
+
+/* .instructors-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.instructors-intro p {
+  max-width: 600px;
+  margin: 0 auto;
+} */
+
+/* Grid layout */
+.instructor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Instructor card */
+.instructor-card {
+  /* border: 1px solid #e5e5e5; */
+  border-radius: 18px;
+  background-color: #fafafa;
+  padding: 1.5rem;
+}
+
+.instructor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.instructor-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.instructor-card .instructor-role {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.instructor-photo img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.instructor-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.instructor-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.instructor-photo img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .instructor-grid {
+    grid-template-columns: 1fr;
+  }
+}
